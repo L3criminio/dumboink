@@ -1,0 +1,33 @@
+# Ne versionner que la documentation, la configuration Git, le thème et le plugin.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+!/wp-content/plugins/
+/wp-content/themes/*
+!/wp-content/themes/dumboink/
+/wp-content/plugins/*
+!/wp-content/plugins/dumboink-core/
+
+# Secrets et configuration locale.
+wp-config.php
+.env
+.env.*
+
+# Cœur de WordPress et fichiers téléversés (également exclus ci-dessus).
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+
+# Dépendances et journaux.
+node_modules/
+*.log
+logs/
+
+# Fichiers système.
+Thumbs.db
+.DS_Store
+desktop.ini
